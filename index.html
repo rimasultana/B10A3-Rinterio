@@ -35,6 +35,7 @@
               "title-p": "#494949",
               paraColor: "#737373",
               "card-title": "#1C1C1C",
+              "primary-color": "red",
             },
             fontFamily: {
               manrope: ['"Manrope"', "system-ui"],
@@ -47,6 +48,7 @@
   <body class="font-manrope">
     <header>
       <!-- navbar -->
+     <nav>
       <div class="navbar bg-base-100 w-11/12 mx-auto">
         <div class="navbar-start">
           <div class="flex items-center justify-center">
@@ -130,6 +132,7 @@
           </div>
         </div>
       </div>
+     </nav>
       <!-- banner -->
       <section class="">
         <!-- banner-container -->
@@ -172,7 +175,7 @@
             <div class="absolute lg:block hidden -left-9 -top-7">
               <img src="./assets/Vector.png" alt="" />
             </div>
-            <div class="lg:w-4/5" w-full>
+            <div class="flex-1" w-full>
               <div class="md:space-y-3 space-y-2 text-center lg:text-left">
                 <a class="btn rounded-full bg-white px-7 py-2">
                   <button class="rounded-full">
@@ -226,7 +229,7 @@
               </div>
             </div>
             <!-- about image -->
-            <div class="lg:w-2/4 w-full">
+            <div class="flex-1 w-full">
               <img
                 src="./assets/Rectangle.png"
                 class="rounded-lg shadow-2xl w-full"
@@ -236,163 +239,124 @@
         </div>
       </section>
       <!-- Our Works Process -->
-      <section
-        class="lg:py-20 py-10 bg-gray-50 border-x-8 border-white space-y-7"
-      >
-        <div class="md:space-y-4 space-y-2 text-center w-11/12 mx-auto">
-          <a class="btn rounded-full bg-white hover:bg-white shadow px-5 py-2">
-            <button class="rounded-full">
-              <i class="fa-solid fa-arrow-right text-1xl"> </i>
-            </button>
-            <span class="font-bold">How we works</span>
-          </a>
-          <h1 class="lg:text-[40px] text[36px] font-bold text-title-color">
-            Our Works Process
-          </h1>
-          <p class="py-2 text-lg text-title-p">
-            When detailing "Our Work Process" in the context of design—whether
-            for residential or commercial projects—it's essential to communicate
-            the steps involved clearly and effectively.
-          </p>
-        </div>
-        <div
-          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-11/12 mx-auto"
-        >
-          <div class="card bg-red-300 w-full px-3 py-1 space-y-2">
-            <div class="card-body">
-              <img src="./assets/concept.png" class="w-10" alt="" />
-              <h2 class="text-card-title font-extrabold tex-xl">Concept</h2>
-              <p class="text-title-p text-[16px] font-medium">
-                the concept is the foundational idea or theme that guides the
-                entire project. It’s the central narrative or vision that
-                shapes.
-              </p>
-            </div>
+      <section class="bg-gray-50 border-x-8 w-full">
+        <div class="lg:py-20 py-10 border-white space-y-7">
+          <div class="md:space-y-4 space-y-2 text-center w-11/12 mx-auto">
+            <a
+              class="btn rounded-full bg-white hover:bg-white shadow px-5 py-2"
+            >
+              <button class="rounded-full">
+                <i class="fa-solid fa-arrow-right text-1xl"> </i>
+              </button>
+              <span class="font-bold">How we works</span>
+            </a>
+            <h1 class="lg:text-5xl text-3xl text[36px] font-bold text-title-color">
+              Our Works Process
+            </h1>
+            <p class="py-2 text-lg text-title-p">
+              When detailing "Our Work Process" in the context of design—whether
+              for residential or commercial projects—it's essential to
+              communicate the steps involved clearly and effectively.
+            </p>
           </div>
-          <div class="card bg-yellow-200 w-full px-3 py-1">
-            <div class="card-body">
-              <img src="./assets/flow-chart.png" class="w-10" alt="" />
-              <h2 class="text-card-title font-extrabold tex-xl">
-                Design Process
-              </h2>
-              <p class="text-title-p text-[16px] font-medium">
-                The design process is a systematic approach that guides the
-                development of a project from concept to completion.
-              </p>
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 w-11/12 mx-auto"
+          >
+            <div class="card bg-red-300 w-full px-3 py-1 space-y-2">
+              <div class="card-body">
+                <img src="./assets/concept.png" class="w-10" alt="" />
+                <h2 class="text-card-title font-extrabold tex-xl">Concept</h2>
+                <p class="text-title-p text-[16px] font-medium">
+                  the concept is the foundational idea or theme that guides the
+                  entire project. It’s the central narrative or vision that
+                  shapes.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card bg-teal-300 w-full px-3 py-1">
-            <div class="card-body">
-              <img src="./assets/vision.png" class="w-10" alt="" />
-              <h2 class="text-card-title font-extrabold tex-xl">Supervision</h2>
-              <p class="text-title-p text-[16px] font-medium">
-                Supervision in the context of a design and construction project
-                involves overseeing the implementation of the design to ensure.
-              </p>
+            <div class="card bg-yellow-200 w-full px-3 py-1">
+              <div class="card-body">
+                <img src="./assets/flow-chart.png" class="w-10" alt="" />
+                <h2 class="text-card-title font-extrabold tex-xl">
+                  Design Process
+                </h2>
+                <p class="text-title-p text-[16px] font-medium">
+                  The design process is a systematic approach that guides the
+                  development of a project from concept to completion.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="card bg-blue-300 w-full px-3 py-1">
-            <div class="card-body">
-              <img src="./assets/budget-planning.png" class="w-10" alt="" />
-              <h2 class="text-card-title font-extrabold tex-xl">
-                Budget Planning
-              </h2>
-              <p class="text-title-p text-[16px] font-medium">
-                Budget Planning is a critical component of any design and
-                construction project, ensuring that the financial resources are
-                effectively allocated
-              </p>
+            <div class="card bg-teal-300 w-full px-3 py-1">
+              <div class="card-body">
+                <img src="./assets/vision.png" class="w-10" alt="" />
+                <h2 class="text-card-title font-extrabold tex-xl">
+                  Supervision
+                </h2>
+                <p class="text-title-p text-[16px] font-medium">
+                  Supervision in the context of a design and construction
+                  project involves overseeing the implementation of the design
+                  to ensure.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-blue-300 w-full px-3 py-1">
+              <div class="card-body">
+                <img src="./assets/budget-planning.png" class="w-10" alt="" />
+                <h2 class="text-card-title font-extrabold tex-xl">
+                  Budget Planning
+                </h2>
+                <p class="text-title-p text-[16px] font-medium">
+                  Budget Planning is a critical component of any design and
+                  construction project, ensuring that the financial resources
+                  are effectively allocated
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Our Latest Portfolio -->
-      <section class="w-11/12 mx-auto mb-24 mt-14">
-        <div class="md:space-y-4 space-y-2 text-center md:w-3/5 mx-auto">
-          <a class="btn rounded-full bg-lime-200 hover:bg-lime-200 px-5 py-2">
-            <button class="rounded-full">
-              <i class="fa-solid fa-arrow-right text-1xl p-2"> </i>
-            </button>
-            <span class="text-base font-bold">Explore our Latest works</span>
-          </a>
-          <h1 class="lg:text-[40px] text[36px] font-bold">
-            Our Latest Portfolio
-          </h1>
-          <p class="py-2 text-lg text-title-p">
-            Our Latest Portfolio is an opportunity to showcase recent projects,
-            highlighting your firm's expertise, creativity, and range of work.
-            It demonstrates your ability to handle different types.
-          </p>
-        </div>
-        <div
-          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:grid-rows-2 md:grid-rows-4 gap-5 py-14"
-        >
-          <div
-            class="p-5 bg-white rounded-xl border border-gray-300 lg:col-span-3 md:col-span-2 flex items-center"
-          >
-            <div class="flex lg:flex-row md:flex-row flex-col gap-5">
-              <div class="lg:w-1/2 w-full">
-                <img
-                  src="./assets/img1.png"
-                  class="rounded-lg w-full h-full shadow-2xl"
-                />
-              </div>
-              <div class="">
-                <h1 class="text-3xl font-bold">Commercial</h1>
-                <p class="py-6">
-                  For a commercial portfolio, focus on showcasing projects that
-                  highlight your expertise in designing functional, aesthetic,
-                  and brand-aligned spaces for businesses
-                </p>
-                <a href="#" class=" ">
-                  <div class="flex items-center gap-1">
-                    <h1 class="text-xl font-bold">View Details</h1>
-                    <div class="bg-btn-bg rounded-full bg-lime-300">
-                      <i
-                        class="fa-solid fa-arrow-right text-1xl p-2.5 -rotate-45"
-                      >
-                      </i>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 bg-white rounded-xl border border-gray-300">
-            <img src="./assets/img2.png" class="w-full h-full" alt="" />
+      <section class="bg-gray-50 md:bg-white w-full">
+        <div class="w-11/12 mx-auto mb-24 mt-14">
+          <div class="md:space-y-4 space-y-2 text-center md:w-3/5 mx-auto">
+            <a class="btn rounded-full bg-lime-200 hover:bg-lime-200 px-5 py-2">
+              <button class="rounded-full">
+                <i class="fa-solid fa-arrow-right text-1xl p-2"> </i>
+              </button>
+              <span class="text-base font-bold">Explore our Latest works</span>
+            </a>
+            <h1 class="lg:text-[40px] text-3xl lg:text-5xl font-bold">
+              Our Latest Portfolio
+            </h1>
+            <p class="py-2 text-lg text-title-p">
+              Our Latest Portfolio is an opportunity to showcase recent
+              projects, highlighting your firm's expertise, creativity, and
+              range of work. It demonstrates your ability to handle different
+              types.
+            </p>
           </div>
           <div
-            class="p-4 bg-white rounded-xl border border-gray-300 lg:hidden md:block"
+            class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:grid-rows-2 md:grid-rows-4 gap-5 py-14"
           >
-            <img src="./assets/img5.png" class="w-full" alt="" />
-          </div>
-          <div
-            class="p-4 bg-white rounded-xl border md:order-2 order-1 lg:order-1 border-gray-300 w-full"
-          >
-            <img src="./assets/img3.png" class="w-full h-full" alt="" />
-          </div>
-          <div class="md:col-span-2 md:order-1 lg:order-2">
             <div
-              class="hero-content md:flex-row flex-col lg:flex-row p-4 bg-white rounded-xl border border-gray-300"
+              class="p-5 bg-white rounded-xl border border-gray-300 lg:col-span-3 md:col-span-2 flex items-center"
             >
               <div class="flex lg:flex-row md:flex-row flex-col gap-5">
-                <div class="lg:w-1/2 flex-1">
+                <div class="lg:w-1/2 w-full">
                   <img
-                    src="./assets/img4.png"
+                    src="./assets/img1.png"
                     class="rounded-lg w-full h-full shadow-2xl"
                   />
                 </div>
-                <div class="flex-1">
-                  <h1 class="text-3xl font-bold">Commercial</h1>
+                <div class="">
+                  <h1 class="lg:text-3xl text-2xl  font-bold">Commercial</h1>
                   <p class="py-6">
-                    Start with a brief introduction to your commercial
-                    portfolio, highlighting the diversity of projects and your
-                    expertise in creating functional and engaging business
-                    environments.
+                    For a commercial portfolio, focus on showcasing projects
+                    that highlight your expertise in designing functional,
+                    aesthetic, and brand-aligned spaces for businesses
                   </p>
                   <a href="#" class=" ">
                     <div class="flex items-center gap-1">
-                      <h1 class="text-xl font-bold">View Details</h1>
+                      <h1 class="lg:text-lg font-bold">View Details</h1>
                       <div class="bg-btn-bg rounded-full bg-lime-300">
                         <i
                           class="fa-solid fa-arrow-right text-1xl p-2.5 -rotate-45"
@@ -404,61 +368,107 @@
                 </div>
               </div>
             </div>
-            <!-- </div> -->
-          </div>
-          <!-- card five -->
-          <div
-            class="p-4 w-full bg-white md:order-2 lg:order-3 order-1 rounded-xl border border-gray-300"
-          >
-            <!-- card image -->
-            <img src="./assets/img5.png" class="w-full h-full" alt="" />
+            <div class="p-4 bg-white rounded-xl border border-gray-300">
+              <img src="./assets/img2.png" class="w-full h-full" alt="" />
+            </div>
+            <div
+              class="p-4 bg-white rounded-xl border border-gray-300 lg:hidden md:block"
+            >
+              <img src="./assets/img5.png" class="w-full" alt="" />
+            </div>
+            <div
+              class="p-4 bg-white rounded-xl border md:order-2 order-1 lg:order-1 border-gray-300 w-full"
+            >
+              <img src="./assets/img3.png" class="w-full h-full" alt="" />
+            </div>
+            <div class="md:col-span-2 md:order-1 lg:order-2">
+              <div
+                class="hero-content md:flex-row flex-col lg:flex-row p-4 bg-white rounded-xl border border-gray-300"
+              >
+                <div class="flex lg:flex-row md:flex-row flex-col gap-5">
+                  <div class="lg:w-1/2 flex-1">
+                    <img
+                      src="./assets/img4.png"
+                      class="rounded-lg w-full h-full shadow-2xl"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <h1 class="lg:text-3xl text-2xl font-bold">Commercial</h1>
+                    <p class="py-6">
+                      Start with a brief introduction to your commercial
+                      portfolio, highlighting the diversity of projects and your
+                      expertise in creating functional and engaging business
+                      environments.
+                    </p>
+                    <a href="#" class=" ">
+                      <div class="flex items-center gap-1">
+                        <h1 class="lg:text-xl text-lg font-bold">View Details</h1>
+                        <div class="bg-btn-bg rounded-full bg-lime-300">
+                          <i
+                            class="fa-solid fa-arrow-right text-1xl p-2.5 -rotate-45"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+            <!-- card five -->
+            <div
+              class="p-4 w-full bg-white md:order-2 lg:order-3 order-1 rounded-xl border border-gray-300"
+            >
+              <!-- card image -->
+              <img src="./assets/img5.png" class="w-full h-full" alt="" />
+            </div>
           </div>
         </div>
       </section>
       <!-- Let’s Discuss Next Project -->
       <section
+        class="relative md:py-20 py-10 w-full bg-no-repeat bg-cover sm:pt-0"
         style="background-image: url('assets/bg.jpg')"
-        class="md:py-20 py-10 w-full bg-no-repeat bg-cover opacity-90"
       >
-        <div class="lg:w-4/5 mx-auto w-11/12">
+        <!-- Overlay for background opacity -->
+        <div class="absolute inset-0 bg-white opacity-60"></div>
+
+        <div class="relative lg:w-4/5 mx-auto w-11/12">
           <div
-            class="md:space-y-4 space-y-2 text-center lg:w-3/5 md:3/5 w-full md:mx-auto"
+            class="md:space-y-4 space-y-2 text-center lg:w-3/5 md:w-3/5 w-full md:mx-auto"
           >
             <a class="btn rounded-full hover:bg-lime-400 bg-lime-400 px-5 py-2">
               <button class="rounded-full">
-                <i class="fa-solid fa-arrow-right text-1xl p-2"> </i>
+                <i class="fa-solid fa-arrow-right text-1xl p-2"></i>
               </button>
               <span class="text-base font-bold">Let’s Connect</span>
             </a>
-            <h1 class="lg:text-[40px] text[36px] font-bold text-title-color">
+            <h1 class="lg:text-[40px] md:text-5xl text-3xl font-bold text-title-color">
               Let’s Discuss Next Project
             </h1>
             <p class="py-2 text-lg text-title-p">
-              next project and ensure that all critical elements are considered.
+              Next project and ensure that all critical elements are considered.
               Let me know which areas you'd like to focus on or if you have
               specific details to discuss!
             </p>
           </div>
           <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-            <!-- xs -->
             <input
               type="text"
               placeholder="First Name*"
               class="input input-bordered rounded-full input-md w-full"
             />
-            <!-- sm -->
             <input
               type="text"
               placeholder="Last Name*"
               class="input input-bordered rounded-full input-md w-full"
             />
-            <!-- md -->
             <input
               type="text"
               placeholder="Phone Number*"
               class="input input-bordered rounded-full input-md w-full"
             />
-            <!-- lg -->
             <input
               type="text"
               placeholder="Email Number*"
@@ -469,21 +479,22 @@
               placeholder="Write your message here"
             ></textarea>
             <a
-              class="btn hover:bg-lime-400 bg-lime-400 rounded-full md:col-span-2 w-full"
+              class="btn hover:bg-lime-400 bg-lime-400 rounded-full md:col-span-2 w-full flex items-center justify-center"
             >
-              <span class="tedxt-xl font-bol">Send Mail</span>
-              <button class="rounded-full">
+              <span class="text-xl font-bold">Send Mail</span>
+              <button class="rounded-full ml-2">
                 <i
-                  class="fa-solid fa-arrow-right font-semibold text-white text-lg bg-black rounded-full w-8 h-8 mr-2 text-center -rotate-45"
+                  class="fa-solid fa-arrow-right font-semibold text-white text-lg bg-black rounded-full w-8 h-8 text-center -rotate-45"
                 ></i>
               </button>
             </a>
           </div>
         </div>
       </section>
+
       <!-- Make Me New Section -->
       <section class="w-11/12 mx-auto py-10 lg:mb-20">
-        <h1 class="text-5xl font-bold text-center my-8 text-title-color">
+        <h1 class="md:text-5xl text-3xl  font-bold text-center my-8 text-title-color">
           Contract Us
         </h1>
         <p class="text-center mb-12 text-lg text-title-p">
@@ -532,7 +543,7 @@
       </section>
     </main>
     <footer
-      class="footer footer-center py-16 rounded p-10 bg-black text-white space-y-5"
+      class="footer footer-center py-16 rounded p-10 bg-black space-y-5"
     >
       <!-- title logo -->
       <div class="md:w-3/5 w-full">
@@ -543,7 +554,7 @@
                 class="fa-solid fa-arrow-right font-semibold text-lg bg-lime-400 rounded-full w-8 h-8 mr-2 text-center -rotate-45"
               ></i>
             </div>
-            <h1 class="text-4xl font-extrabold">Rinterio</h1>
+            <h1 class="lg:text-4xl text-3xl  text-white font-extrabold">Rinterio</h1>
           </div>
         </a>
         <p class="py-2 text-gray-200">

@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/da72d6e058.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind and Daisy Ui link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -18,11 +23,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome link -->
-    <script
-      src="https://kit.fontawesome.com/da72d6e058.js"
-      crossorigin="anonymous"
-    ></script>
+
     <!-- tailwind configuration -->
     <script>
       tailwind.config = {
@@ -34,7 +35,9 @@
               "title-p": "#494949",
               paraColor: "#737373",
               "card-title": "#1C1C1C",
-              bgColor: "",
+            },
+            fontFamily: {
+              manrope: ['"Manrope"', "system-ui"],
             },
           },
         },
@@ -42,7 +45,7 @@
     </script>
   </head>
   <body class="font-manrope">
-    <header class="">
+    <header>
       <!-- navbar -->
       <div class="navbar bg-base-100 w-11/12 mx-auto">
         <div class="navbar-start">
@@ -59,7 +62,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul
-            class="menu menu-horizontal px-1 text-lg font-medium text-paraColor"
+            class="menu menu-horizontal px-1 text-sm font-medium text-paraColor"
           >
             <li class="hover:font-bold hover:text-title-p">
               <a href="#">Home</a>
@@ -166,7 +169,7 @@
       <section class="bg-gray-50 w-full">
         <div class="hero w-11/12 mx-auto lg:py-20 py-10">
           <div class="hero-content lg:flex-row flex-col md:gap-10 relative">
-            <div class="absolute lg:block hidden -left-9 -top-5">
+            <div class="absolute lg:block hidden -left-9 -top-7">
               <img src="./assets/Vector.png" alt="" />
             </div>
             <div class="lg:w-4/5" w-full>
@@ -187,35 +190,36 @@
                   and the comfort of those who inhabit the space
                 </p>
               </div>
-              <div class="flex flex-col md:flex-row lg:flex-col gap-4">
+              <div class="flex flex-col md:flex-row lg:flex-col gap-5">
                 <div
-                  class="flex items-center gap-9 bg-white px-5 py-2 rounded-xl shadow"
+                  class="flex lg:items-center md:gap-6 gap-3 bg-white px-3 py-4 rounded-xl"
                 >
                   <div class="">
-                    <img src="./assets/commercial.png " class="w-24" alt="" />
+                    <img src="./assets/commercial.png " class="" alt="" />
                   </div>
                   <div>
                     <h1 class="text-xl font-bold">Commercial</h1>
-                    <p class="text-paraColor">
-                      When applying the principles of thoughtful, livable space
-                      design to commercial spaces, the focus shifts toward
-                      creating environments that enhance productivity
+                    <p class="text-paraColor text-base">
+                      A commercial building is a structure designed for
+                      conducting business activities or services.
                     </p>
                   </div>
                 </div>
                 <div
-                  class="flex items-center gap-9 bg-white px-4 py-2 rounded-xl shadow"
+                  class="flex lg:items-center md:gap-6 gap-4 bg-white px-3 py-4 rounded-xl"
                 >
                   <div class="">
-                    <img src="./assets/residential.png " class="w-24" alt="" />
+                    <img
+                      src="./assets/residential.png "
+                      class="w-full"
+                      alt=""
+                    />
                   </div>
                   <div>
                     <h1 class="text-xl font-bold">Residential</h1>
                     <p class="text-paraColor text-base">
-                      When applying the principles of thoughtful, livable space
-                      design to residential spaces, the focus is on creating
-                      homes that are comfortable, functional, and tailored to
-                      the needs
+                      TResidential buildings are structures designed to provide
+                      living spaces for individuals and families
                     </p>
                   </div>
                 </div>
@@ -324,7 +328,7 @@
           class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:grid-rows-2 md:grid-rows-4 gap-5 py-14"
         >
           <div
-            class="p-4 bg-white rounded-xl border border-gray-300 lg:col-span-3 md:col-span-2 flex items-center"
+            class="p-5 bg-white rounded-xl border border-gray-300 lg:col-span-3 md:col-span-2 flex items-center"
           >
             <div class="flex lg:flex-row md:flex-row flex-col gap-5">
               <div class="lg:w-1/2 w-full">
@@ -486,9 +490,9 @@
           important to create a clear and comprehensive document that outlines
           the terms and conditions agreed upon by both parties.
         </p>
-        <div class="w-10/12 mx-auto">
+        <div class="lg:w-10/12 mx-auto w-full">
           <div
-            class="flex justify-between flex-col lg:flex-row items-center gap-6 lg-3/5 mx-auto"
+            class="flex justify-between flex-col lg:flex-row items-center gap-6"
           >
             <div
               class="hover:bg-lime-300 duration-1000 transition-all hover:border-gray-300 border-2 border-lime-200 w-80 h-56 p-8 text-center space-y-2 shadow rounded-2xl"
@@ -550,7 +554,7 @@
       <!-- navigation bar  -->
       <div class="">
         <ul
-          class="flex md:flex-row justify-between flex-col md:gap-15 gap-10 px-1 text-base font-bold text-gray-200"
+          class="flex md:flex-row justify-between flex-col md:gap-15 gap-10 px-1 text-base font-bold text-[#E9E9E9]"
         >
           <li class="hover:text-lime-400"><a href="">Home</a></li>
           <li class="hover:text-lime-400"><a href="">Services</a></li>
